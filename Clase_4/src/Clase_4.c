@@ -15,7 +15,11 @@
 
 int main(void)
 {
-	saludarAlUsuario();
+	int resultado;
+	if (getInt(&resultado, "Edad?\n", "Error\n",0,150,2)==0)
+	{
+	printf("El resultado es %d",resultado);
+	}
 	return EXIT_SUCCESS;
 }
 
