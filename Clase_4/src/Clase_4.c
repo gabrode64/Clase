@@ -16,11 +16,12 @@
 
 int main(void)
 {
-	int resultado;
-	if(getInt(&resultado,"Edad?\n","Error\n",0,150,2)==0)
+	char resultado;
+	if(getChar(&resultado,"Edad?\n","Error\n",0,150,2)==0)
 	{
-		printf("El resultado es: %d",resultado);
+		printf("El resultado es: %c",resultado);
 	}
+
 	return EXIT_SUCCESS;
 }
 
